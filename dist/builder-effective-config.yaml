@@ -1,0 +1,21 @@
+directories:
+  output: dist
+  buildResources: build
+appId: com.gemini.superencryption
+productName: Super Encryption
+files:
+  - filter:
+      - main.js
+      - preload.js
+      - index.html
+      - renderer.js
+      - style.css
+      - node_modules/**/*
+      - assets/**/*
+win:
+  target: nsis
+  icon: assets/icon.png
+nsis:
+  oneClick: false
+  allowToChangeInstallationDirectory: true
+electronVersion: 28.3.3
